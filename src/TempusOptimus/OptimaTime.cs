@@ -62,7 +62,14 @@ namespace TempusOptimus
 
         public static OptimaTime Now
         {
-            get { return Convert(DateTime.UtcNow.TimeOfDay); }
+            get
+            {
+                var romeTimeZoneOffsetFromUtc = TimeSpan.FromHours(1);
+                var currentTime = DateTimeOffset
+                    .UtcNow
+                    .ToOffset(romeTimeZoneOffsetFromUtc).TimeOfDay;
+                return Convert(currentTime);
+            }
         }
 
         public TimeSpan TimeSpan

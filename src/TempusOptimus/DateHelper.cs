@@ -39,6 +39,12 @@ namespace TempusOptimus
             AddDate(stringBuilder, dateTime.AddDays(308));
             dateTime = new DateTime(1, 1, 1);
             AddDate(stringBuilder, dateTime.AddDays(336));
+            dateTime = new DateTime(1, 1, 1);
+            AddDate(stringBuilder, dateTime.AddDays(364));
+            dateTime = new DateTime(1, 1, 1);
+            AddDate(stringBuilder, dateTime.AddDays(365));
+            dateTime = new DateTime(1, 1, 1);
+            AddDate(stringBuilder, dateTime.AddDays(366));
             AddDate(stringBuilder, new DateTime(1975, 2, 6));
             AddDate(stringBuilder, new DateTime(1975, 2, 25));
             dateTime = new DateTime(1975, 2, 26);
