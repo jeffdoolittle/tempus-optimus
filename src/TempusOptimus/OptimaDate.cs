@@ -46,6 +46,10 @@ namespace TempusOptimus
             get { return _dayOfYear; }
         }
 
+        public int Year { get { return _year; } }
+        public int Month { get { return _month; } }
+        public int Day { get { return _dayOfMonth; } }
+
         public static OptimaDate Today
         {
             get { return Convert(DateTime.UtcNow.Date); }
